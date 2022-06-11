@@ -1,6 +1,5 @@
 package com.zzw.mymall.service;
 
-import com.zzw.mymall.entity.User;
 import com.zzw.mymall.vo.ResultVo;
 
 /**
@@ -8,6 +7,13 @@ import com.zzw.mymall.vo.ResultVo;
  * @version v1.0
  */
 public interface UserService {
+    /**
+     * 用户注册
+     * @param username
+     * @param password
+     * @return
+     */
+    public ResultVo userRegister(String username, String password);
     /**
      * 检查登录
      * @param username
